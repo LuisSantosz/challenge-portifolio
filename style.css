@@ -54,14 +54,11 @@ section.menu{
 
 }
 
-.header{
-    display: flex;
-}
 
 .logo__topo{
     position: relative;
-    right: 180%;
-    top: 20%;
+    right: 150%;
+    top: 28%;
     height: 50px;
     width: 50px;
     background-attachment: fixed; /*deixa a imagem fixa*/
@@ -72,9 +69,9 @@ section.menu{
 /*nome*/
 .menu__title{
     position: relative;
-    right: 120%;
-    bottom: 25%;
-    font-size: 15px;
+    right: 110%;
+    bottom: 20%;
+    font-size: 20px;
     
 }
 
@@ -84,8 +81,10 @@ section.menu{
     justify-content: center;
     gap: 35px;
     top: 28%; 
-    font-size: 15px;   
+    font-size: 20px; 
+ 
 }
+
 
 /*Sessão Title*/
 
@@ -100,7 +99,7 @@ section.title{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
     
@@ -111,10 +110,12 @@ section.title{
     }
     
     .title__profile {
+        display: flex;
         border-radius: 50%;
         height: 20%;
         width: 20%;
-        padding: 10px 0;
+        padding: 10px;
+        margin: 1%;
         background-attachment: fixed;
     }
     
@@ -154,7 +155,7 @@ section.title{
     }
     
     .about__container {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         max-width: 1200px;
     }
@@ -175,6 +176,7 @@ section.title{
     height: 60px;
 }
 .skills__title{
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     font-size: 30px;
@@ -196,6 +198,7 @@ section.hobbies{
     height: 60px;
 }
 .hobbies__title{
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     font-size: 30px;
@@ -212,17 +215,19 @@ section.academic{
 
 }
 .academic__title {
+    margin-top: 5%;
     font-size: 30px;
     margin-bottom: 30px;
     text-align: center;
 }
 
 .academic__courses {
+    margin: 1%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /*quebra linhas*/
+    /*flex-wrap: wrap; quebra linhas*/
     gap: 20px;
-    overflow: scroll;
+   /* overflow: scroll;*/
 }
 
 .academic__courses__box {
@@ -261,25 +266,93 @@ section.academic{
 
 /* experiência*/
 
-section.experience{ 
-
+.section.experience { 
+    padding: 20px;
 }
 
-.experience__section__title{
-text-align: center;
-font-size: 30px;
-}
-
-.experience__info{
+.experience__section__title {
+    margin-top: 5%;
     text-align: center;
-    
+    font-size: 30px;
 }
-.experience__title{
+
+.experience__container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.experience__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.experience__img {
+    padding: 1%;
+    width: 100%;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.experience__info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.experience__title {
     font-size: 20px;
+    margin: 10px 0;
 }
-.experience__text{
-    font-size: 10px;
+
+.experience__text {
+    font-size: 14px;
 }
+
+.experience__description {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding-bottom: 3%;
+
+}
+
+.experiencia__botao--demo{
+    padding: 10px;
+    background-color: white;
+    font-weight: bolder;
+    -webkit-transition: ease-out 0.7s;
+    -moz-transition: ease-out 0.7s;
+    transition: ease-out 0.7s;
+}
+
+.experiencia__botao--repo{
+    padding: 10px;
+    background-color: white;
+    font-weight: bolder;
+    -webkit-transition: ease-out 0.7s;
+    -moz-transition: ease-out 0.7s;
+    transition: ease-out 0.7s;
+}
+
+.experiencia__botao--demo:hover {
+    color: white;
+    font-weight: bolder;
+ box-shadow: inset 400px 0 0 0 var(--cor-de-link);
+  }
+
+  .experiencia__botao--repo:hover {
+    color: white;
+    font-weight: bolder;
+ box-shadow: inset 400px 0 0 0 var(--cor-de-link);
+  }
+
+
 
 /*Contato*/
 
@@ -287,9 +360,55 @@ section.formcontato{
 
 }
 
+
+.formcontato__title{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.formcontato__subtext{
+    margin-left: 1%;
+}
+
+#nome, #email, #assunto, #mensagem{
+    margin: 10px;
+    display: flex;
+    margin-left: 1%;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.formcontato__botao{
+    margin-left: 1%;
+    color: var(--cor-de-link);
+    background-color: white;
+    border: 2px solid var(--cor-de-link);
+    border-radius: 10px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 ;
+    -webkit-transition: ease-out 0.7s;
+    -moz-transition: ease-out 0.7s;
+    transition: ease-out 0.7s;
+      }
+
+    .formcontato__botao:hover {
+        color: white;
+        font-weight: bolder;
+     box-shadow: inset 400px 0 0 0 var(--cor-de-link);
+      }
 /*footeer*/
 
 section.footer{
+    margin: 80px;
+    text-align: center;
+    font-weight: bolder;
    
 }
 
@@ -298,6 +417,7 @@ utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
 @media (min-width: 768px) {
+
 
 /* Menu */
 
